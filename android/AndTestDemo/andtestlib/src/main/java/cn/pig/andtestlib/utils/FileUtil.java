@@ -11,10 +11,17 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
+ * 文件处理类
  * Created by pig on 2016/7/12.
  */
 public class FileUtil {
 
+    /**
+     * 从文件中读取内容
+     *
+     * @param path 文件路径
+     * @return 返回读取到的数据
+     */
     public static String readFile(String path) {
         if (TextUtils.isEmpty(path)) {
             return null;
